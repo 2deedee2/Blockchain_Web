@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Election Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        function can1(){
+            var ballot = $('#can1').val();
+            document.cookie = "can=can1";
+            window.location.href = "http://localhost/Blockchain_web/submitVote.php"
+        }
+        function can2(){
+            var ballot = $('#can2').val();
+            document.cookie = "can=can2";
+            window.location.href = "http://localhost/Blockchain_web/submitVote.php"
+        }
+        function can3(){
+            var ballot = $('#can3').val();
+            document.cookie = "can=can3";
+            window.location.href = "http://localhost/Blockchain_web/submitVote.php"
+        }
+            
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 380px;
+            height: 580px;
+            margin: 35px auto;
+        }
+
+        .navElection {
+            margin: 10px auto;
+        }
+
+        .cards-col1 {
+            margin-bottom: 30px;
+        }
+
+        .cards-col2 {
+            margin-bottom: 30px;
+
+        }
+        .cardBtn{
+            margin: 0 auto;
+            margin-bottom: 10px;
+
+        }
+        .cardBtn button{
+            width: 150px;
+            height: 70px;
+            text-align: center;
+            font-size: 30px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navElection">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabelectionled</a>
+                </li>
+            </ul>
+        </div>
+        <div class="electionCard">
+            <form action="election.php" method="POST">
+                <div class="cards-col1">
+                    <div class="card-group">
+                        <div class="card">
+                            <img src="./img.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Candidate 1</h5>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, ullam! Placeat ipsa illo hic atque, quod libero. Saepe quisquam provident accusamus eiu.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                            <div class="cardBtn">
+                                    <a href="javascript:can1();"><button type="button" id="can1" name="can1" value="can1" class="btn btn-info">vote</button></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Candidate 2</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                            <div class="cardBtn">
+                                    <a href="javascript:can2();"><button type="button" name="can2" value="can2" class="btn btn-info">vote</button></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Candidate 3</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional
+                                    content. This card has even longer content than the first to show that equal height
+                                    action.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                            <div class="cardBtn">
+                                    <a href="javascript:can3();"><button type="button" name="can3" value="can3" class="btn btn-info">vote</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards-col2">
+                    <div class="card-group">
+                        <div class="card">
+                            <img src="./img.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional
+                                    content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional
+                                    content. This card has even longer content than the first to show that equal height
+                                    action.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>

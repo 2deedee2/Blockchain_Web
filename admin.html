@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+            * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 380px;
+            height: 580px;
+            margin: 35px auto;
+        }
+        .container h3{
+            margin: 0 auto;
+            text-align: center;
+        }
+        .fetchChain{
+            margin: 20px auto;
+        }
+        .fetchChain button{
+            margin: 0 auto;
+            text-align: center;
+            margin-left: 100px;
+        }
+    </style>
+    <title>Admin Page</title>
+</head>
+<body>
+    <div class="container">
+            <h3>This is a admim page</h3>
+            <div class="fetchChain">
+                <a href="chain.php"><button type="button" class="btn btn-info">Blokchain Data</button></a>
+            </div>
+            <div class="fetchChain">
+                    <a href="mine.php"><button type="button" class="btn btn-info">Mine the block</button></a>
+            </div>
+            <div class="fetchChain">
+                    <a href="getNodes.php"><button type="button" class="btn btn-info">Blockchain Nodes</button></a>
+            </div>
+            <div class="fetchChain">
+                    <a href="resolve.php"><button type="button" class="btn btn-info">Resolve the node</button></a>
+            </div>
+    </div>
+
+    
+</body>
+</html>

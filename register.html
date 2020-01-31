@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+            width: 380px;
+            height: 580px;
+            margin: 35px auto;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="userLogin">
+                    <form action="register.php" method="POST">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" name="pwd1" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group">
+                                <label for="exampleInputPassword1">Confirm Password</label>
+                                <input type="password" name="pwd2" class="form-control" id="exampleInputPassword1">
+                            </div>
+                        
+                        <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                    </form>
+        
+                </div>
+
+
+
+    </div>
+</body>
+</html>
